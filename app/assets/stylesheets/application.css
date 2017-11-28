@@ -13,8 +13,14 @@
  *= require_tree .
  *= require_self
  */
-body {
+html {
   /*The following image is from http://frankbakerart.com/white-and-gray-background-jpg/*/
   background: url('background.jpg') no-repeat center center;
   background-size: cover;
+  background-repeat: repeat-y;
+  text-align: center;
+}
+h2 {
+  font-weight: bolder;
+  font-size: 40px;
 }
