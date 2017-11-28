@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+html {
+  /*The following image is from http://frankbakerart.com/white-and-gray-background-jpg/*/
+  background-image: ../../../white-and-gray-background.jpg
+}
