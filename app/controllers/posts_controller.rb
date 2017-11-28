@@ -5,11 +5,16 @@ class PostsController < ApplicationController
   end
 
   def show
+    @user = current_user
     @post = Post.find(params[:id])
   end
 
   def edit
     @post = Post.find(params[:id])
+    if @post.user != current_user
+      flash[:alert] = "Only author of this post may edit it."
+      redirect_to post_path(@post)
+    end
   end
 
   def new
@@ -17,13 +22,17 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params)
+    @post = Post.create(post_params.merge(user: current_user))
     redirect_to post_path(@post)
   end
 
   def update
     @post = Post.find(params[:id])
-    @post.update(post_params)
+    if @post == current_user
+      @post.update(post_params)
+    else
+      flash[:alert] = "Only author of this post may edit it."
+    end
     redirect_to post_path(@post)
   end
 
