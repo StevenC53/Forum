@@ -11,6 +11,7 @@
     <%= link_to "Add new comment", new_post_comment_path(@post) %>
     <% @post.comments.each do |comment| %>
       <div class="comment">
+        <p class="comment_user"> <%= comment.user.email %> </p>
         <p class="comment_time"><time>Updated <%= comment.updated_at %></time></p>
         <p>
           <%= comment.body %>

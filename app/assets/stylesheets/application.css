@@ -34,6 +34,12 @@ p {
 .comment_time {
   margin-top: 0;
   margin-bottom: -16px;
+  text-align: right;
+}
+.comment_user {
+  margin-top: 0;
+  font-size: 15px;
+  margin-bottom: -16px;
   text-align: left;
 }
 time {
