@@ -4,7 +4,7 @@
     <article>
       <h2><%= link_to post.title, post_path(post) %></h2>
       <time>Updated <%= post.updated_at %></time>
-      <p><%= post.body %></p>
+      <p class="post"><%= post.body %></p>
     </article>
   <% end %>
 </section>

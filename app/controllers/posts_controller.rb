@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    if @post.user != current_user
+    if current_user != @post.user
       flash[:alert] = "Only author of this post may edit it."
       redirect_to post_path(@post)
     end
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post == current_user
+    if @post.user == current_user
       @post.update(post_params)
     else
       flash[:alert] = "Only author of this post may edit it."
