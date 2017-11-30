@@ -1,24 +1,21 @@
-# README
+# Forum Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a general Forum that anyone can use to post about whatever they would like.
 
-Things you may want to cover:
+## How to utilize
 
-* Ruby version
+Simply go to the website, click sign-up, and start posting and commenting to your hearts' content
 
-* System dependencies
+### Screen shots
 
-* Configuration
+* Here is a screen shot of the site.
+ ![Sample photo](https://imgur.com/xuwc7Mt)
 
-* Database creation
+#### User Stories
 
-* Database initialization
+### Technologies used
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby on Rails
+* Heroku(for deployment)
+* Devise(user authentication)
+* https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address Used code from this link to add username field to the users and allow sign in with either username or email.
