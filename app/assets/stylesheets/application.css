@@ -25,6 +25,9 @@ h2 {
   font-size: 40px;
   margin-bottom: 14.2px;
 }
+#error_explanation {
+  font-size: 18px;
+}
 p {
   font-size: 16px;
 }
