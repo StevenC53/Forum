@@ -1,4 +1,5 @@
 module DeviseHelper
+  # https://github.com/plataformatec/devise/wiki/Override-devise_error_messages!-for-views
   def devise_error_messages!
     return "" unless devise_error_messages?
 
