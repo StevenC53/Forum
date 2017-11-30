@@ -1,6 +1,7 @@
 <%= link_to "&larr; Back".html_safe, posts_path %>
 <article>
   <h2><%= @post.title %></h2>
+  <p class="post_user">Author: <%= @post.user.username %></p>
   <p class="post"><%= @post.body %></p>
   <p><time>Updated <%= @post.updated_at %></time></p>
   <% if current_user == @post.user %>

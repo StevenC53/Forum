@@ -52,6 +52,9 @@ p {
 time {
   font-size: 12px;
 }
+.post_user {
+  font-size: 18px;
+}
 .comment {
   margin-bottom: -5px;
   border: 5px solid black;
