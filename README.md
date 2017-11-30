@@ -11,8 +11,6 @@ Simply go to the website, click sign-up, and start posting and commenting to you
 * Here is a screen shot of the site.
  ![Sample photo](https://imgur.com/xuwc7Mt)
 
-#### User Stories
-
 ### Technologies used
 
 * Ruby on Rails
