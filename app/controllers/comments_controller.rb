@@ -46,3 +46,6 @@ class CommentsController < ApplicationController
   end
 
 end
+
+# Great job on the controllers.  The logic is sound and redirects and everything make sense.  Nice job on using the private method with params.require.
+# I'd be great to also include flash messages for when a post or comment is successfully created or updated.  

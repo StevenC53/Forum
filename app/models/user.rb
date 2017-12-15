@@ -25,3 +25,5 @@ class User < ApplicationRecord
     end
   end
 end
+
+# Nice job figuring how to add a username to devise!

@@ -3,7 +3,7 @@
   <% @posts.each do |post| %>
     <article>
       <h2><%= link_to post.title, post_path(post) %></h2>
-      <time>Updated <%= post.updated_at %></time>
+      <time>Updated <%= post.updated_at %></time> <!-- Look into some of the ruby methods on formatting the time to make this more accessable for users. -->
       <p class="post"><%= post.body %></p>
     </article>
   <% end %>

@@ -1,5 +1,5 @@
-<%= link_to "&larr; Back".html_safe, posts_path %>
-<article>
+<%= link_to "&larr; Back".html_safe, posts_path %> <!-- Nice job with the back button -->
+<article> <!-- nice semantic html tag -->
   <h2><%= @post.title %></h2>
   <p class="post_user">Author: <%= @post.user.username %></p>
   <p class="post"><%= @post.body %></p>
@@ -27,3 +27,4 @@
     <% end %>
   </div>
 </article>
+<!-- Good job with the logic to only render links to edit/delete if the user is the current user -->

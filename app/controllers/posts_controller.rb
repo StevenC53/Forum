@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create(post_params.merge(user: current_user))
+    @post = Post.create(post_params.merge(user: current_user)) # Nice job using the merge method 
     redirect_to post_path(@post)
   end
 
